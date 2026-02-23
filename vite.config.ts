@@ -5,7 +5,7 @@ export default defineConfig(async config => {
   return {
     ...(await sharedConfig(config)),
     base: "/ubpr/",
-    publicDir: "public", // Change this to strictly "public"
+    publicDir: ".",
     server: {
       port: Number.isNaN(envPort) ? 8000 : envPort,
     },
