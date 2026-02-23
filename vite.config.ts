@@ -52,7 +52,7 @@ export default defineConfig(async config => {
 
   return {
     ...(await sharedConfig(config)),
-    base: "",
+    base: "/ubpr/",
     publicDir: command === "serve" ? "assets" : false,
     server: {
       port: Number.isNaN(envPort) ? 8000 : envPort,
